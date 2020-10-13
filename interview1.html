@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header,
+        .content,
+        .footer {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .header,
+        .footer {
+            height: 120px;
+            line-height: 120px;
+        }
+        
+        .content {
+            height: 500px;
+            line-height: 500px;
+        }
+        
+        .left,
+        .center,
+        .right {
+            height: 100%;
+        }
+        
+        .left {
+            float: left;
+            width: 200px;
+        }
+        
+        .right {
+            float: right;
+            width: 200px
+        }
+        
+        .center {
+            margin: 0 200px;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+        }
+        
+        .yellow {
+            background: yellow;
+        }
+        
+        .blue {
+            background: blue;
+        }
+        
+        .gray {
+            background: gray;
+        }
+        
+        .green {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='header gray'>header</div>
+    <div class='content'>
+        <div class='left yellow'>left</div>
+        <div class='right yellow'>right</div>
+        <div class='center blue'>center</div>
+    </div>
+    <div class='footer green'>footer</div>
+    <script>
+        //想多了 其实就是个样式···
+        //获取屏幕可用高度
+        //var availHeight = window.screen.availHeight;
+        //获取content的高度
+        //var contentHeight = document.getElementsByClassName("content")[0].offsetHeight
+        //如果可用区域高度大于content高度 理解为content高度不是足够长
+        //if (availHeight > contentHeight) {
+        //获取footer
+        //var footer = document.getElementsByClassName("footer")[0]
+        //}
+    </script>
+</body>
+
+</html>
